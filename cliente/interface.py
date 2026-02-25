@@ -11,4 +11,15 @@ class Interface:
 		y:float = float(input("y="))
 		# chamar maquina.py
 		_maquina = maquina.Maquina(res,x,y)
-		_maquina.execute(res,x,y) ## tem que se usar valor objecot, corrigir
+		valor_calculado = _maquina.execute(res,x,y)
+
+		if res == "+":
+			print("O valor da operação somar é:", valor_calculado)
+		elif res== "-":
+			print("O valor da operação subtrair é:", valor_calculado)
+		elif res== "x":
+			print("O valor da operação multiplicar é:", valor_calculado)
+		elif res == "/":
+			print ("O valor da operação divisão é:", valor_calculado)
+		else:
+			print("O valor da raiz quadrada é", valor_calculado)
