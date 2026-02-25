@@ -1,4 +1,3 @@
-#import dividir
 import interface
 def main():
 	_interface = interface.Interface()
