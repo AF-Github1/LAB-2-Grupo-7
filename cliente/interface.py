@@ -10,4 +10,5 @@ class Interface:
 		x:float = float(input("x="))
 		y:float = float(input("y="))
 		# chamar maquina.py
-		maquina.Maquina.execute(res,x,y)
+		_maquina = maquina.Maquina(res,x,y)
+		_maquina.execute(res,x,y) ## tem que se usar valor objecot, corrigir
